@@ -142,11 +142,14 @@
 
 #### My Remaps
 ```<leader>``` = ' '
+
 ```netrw```= <leader>pv
 
 ##### telescope
 ```<leader>pf``` - project files
+
 ```C-p``` - git files
+
 ```<leader>ps``` - search with grep
 
 ##### undotree
@@ -154,7 +157,11 @@
 
 ##### lsp
 ```C-n``` - next selection
+
 ```C-p``` - previous selection
+
 ```C-y``` - confirm selection
+
 ```C-e``` - cancel selection
+
 ```gd``` - jump to the file
