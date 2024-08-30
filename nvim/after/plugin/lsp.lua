@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { "pyright", "marksman", "clangd"}
+    ensure_installed = { "pyright", "marksman", "clangd" }
 }
 
 local lsp_zero = require('lsp-zero')
@@ -30,17 +30,17 @@ require("lspconfig").pyright.setup {}
 require("lspconfig").clangd.setup {}
 require("lspconfig").marksman.setup {}
 
-local cmp = require('cmp')                                                                        
-                                                                                                    
-  cmp.setup({                                                                                       
-    sources = {                                                                                     
-      {name = 'nvim_lsp'},                                                                          
-    },                                                                                              
-    snippet = {                                                                                     
-      expand = function(args)                                                                       
-        -- You need Neovim v0.10 to use vim.snippet                                                 
-        vim.snippet.expand(args.body)                                                               
-      end,                                                                                          
-    },                                                                                              
-    mapping = cmp.mapping.preset.insert({}),                                                        
+local cmp = require('cmp')
+
+  cmp.setup({
+    sources = {
+      {name = 'nvim_lsp'},
+    },
+    snippet = {
+      expand = function(args)
+        -- You need Neovim v0.10 to use vim.snippet
+        vim.snippet.expand(args.body)
+      end,
+    },
+    mapping = cmp.mapping.preset.insert({}),
   })
