@@ -60,7 +60,7 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
+call plug#end()
+
 " markdown-preview
 let g:mkdp_theme = 'dark'
-
-call plug#end()
