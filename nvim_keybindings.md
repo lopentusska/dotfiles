@@ -9,6 +9,8 @@
 
 ```0``` - move to the start of the line
 
+```^``` - move to the first non-blank in a line
+
 ```e``` - move to the end of the current word
 
 ```w``` - move to the start of the next word
@@ -72,6 +74,9 @@
 #### Insert
 ```i``` - insert text before the cursor
 
+```I``` - move to the start of the line to the first non-blank character
+and insert text
+
 ```a``` - append text after the cursor
 
 ```A``` - move to the end of the line and append text
@@ -122,6 +127,8 @@
 
 ```y``` - copy
 
+```<leader> 0``` - copy from register 0.
+
 ```"+y``` - copy into copy register
 
 ```C-v``` - paste from copy register
@@ -144,6 +151,8 @@
 ```<leader>``` = ' '
 
 ```netrw```= <leader>pv
+
+```<leader> 0``` = ```"0p``` - copy from register 0.
 
 ##### telescope
 ```<leader>pf``` - project files

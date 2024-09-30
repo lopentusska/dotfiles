@@ -32,11 +32,16 @@ set termguicolors
 set updatetime=50
 set colorcolumn=80
 
+set spell spelllang=en_us,ru
+
 let mapleader=" "
+let maplocalleader = " "
+
+let g:pyindent_open_paren=4
 
 " Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+if empty(glob('${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
@@ -62,5 +67,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 call plug#end()
 
-" markdown-preview
+" Colorscheme
+:lua vim.cmd.colorscheme("rose-pine")
+:lua vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+:lua vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+" Markdown preview
 let g:mkdp_theme = 'dark'
