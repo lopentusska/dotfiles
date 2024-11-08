@@ -64,6 +64,7 @@ Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v4.x'}
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
 
