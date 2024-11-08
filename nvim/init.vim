@@ -30,7 +30,7 @@ set incsearch
 set hlsearch
 set termguicolors
 set updatetime=50
-set colorcolumn=80
+set colorcolumn=79
 
 set spell spelllang=en_us,ru
 
