@@ -32,6 +32,9 @@ set termguicolors
 set updatetime=50
 set colorcolumn=79
 
+" disable auto comment leader insertion after 'o' or 'O'
+autocmd FileType * set formatoptions-=cro
+
 set spell spelllang=en_us,ru
 
 let mapleader=" "
