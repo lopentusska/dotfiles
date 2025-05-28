@@ -1,3 +1,4 @@
+# nvim
 #### Cursor Movements
 ```h``` - left
 
@@ -174,3 +175,9 @@ and insert text
 ```C-e``` - cancel selection
 
 ```gd``` - jump to the file
+
+# tmux
+```Ctrl-b :new -s <name>``` - new session
+```Ctrl-b s``` - choose session
+```Ctrl-b w``` - choose choose tree
+
