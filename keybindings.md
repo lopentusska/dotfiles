@@ -178,6 +178,8 @@ and insert text
 
 # tmux
 ```Ctrl-b :new -s <name>``` - new session
+
 ```Ctrl-b s``` - choose session
-```Ctrl-b w``` - choose choose tree
+
+```Ctrl-b w``` - choose tree
 
